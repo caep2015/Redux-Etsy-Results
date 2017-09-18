@@ -1,9 +1,8 @@
-import React, {Component} from 'react';
-import 'shoelace-css/dist/shoelace.css';
-import './App.css';
+import React, {Component} from 'react'
+import './styles/App.css'
 
-import FilterProducts from "./containers/FilterProducts";
-import ProductList from "./containers/ProductList";
+import FilterProducts from "./containers/FilterProducts"
+import ProductList from "./containers/ProductList"
 
 class App extends Component {
     render() {
@@ -13,8 +12,8 @@ class App extends Component {
                 <FilterProducts/>
                 <ProductList/>
             </div>
-        );
+        )
     }
 }
 
-export default App;
+export default App

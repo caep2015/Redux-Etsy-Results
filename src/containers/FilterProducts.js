@@ -11,10 +11,10 @@ class FilterProducts extends Component {
             // If the current `this.props.filter` value matches the `value` passed as an argument to `createFilterRadio`,
               // apply an class of `'active'`, otherwise provied a default class of `'inactive'`.
             // Don't forget to provide the `<button>` with a `key` attribute.
-            <button key={value} className={this.props.filter === value ? 'active' : 'inactive'} onClick={ event => this.props.filterProducts(value) }>{text}</button>
+            <button key={value} className={this.props.filter === value ? 'active' : 'inactive'} onClick={ event => this.props.filterProducts(value)}>{text}</button>
         )
     }
-    render() {
+    render () {
         const filterOptions = [
             [
               "all", "Show all"
